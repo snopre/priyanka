@@ -1,0 +1,40 @@
+#here are the commands to demonstrate how to access and perform operations on a main file
+
+
+#run the MODULE of MAIN FILE and import mainfile as a library 
+
+import code as x 
+
+
+x.create("sastra",25)
+
+
+
+x.create("src",70,3600) 
+
+
+
+x.read("sastra")
+
+
+
+x.read("src")
+
+
+x.create("sastra",50)
+
+
+
+x.modify("sastra",55)
+
+
+ 
+x.delete("sastra")
+
+
+t1=Thread(target=(create or read or delete),args=(key_name,value,timeout)) #as per the operation
+t1.start()
+t1.sleep()
+t2=Thread(target=(create or read or delete),args=(key_name,value,timeout)) #as per the operation
+t2.start()
+t2.sleep()
